@@ -41,8 +41,6 @@ void Car::Input()
 	if (model != nullptr)
 	{
 		delete[]model;
-		model = new char[strlen(buff) + 1];
-		strcpy_s(model, strlen(buff) + 1, buff);
 	}
 	model = new char[strlen(buff) + 1];
 	strcpy_s(model, strlen(buff) + 1, buff);
